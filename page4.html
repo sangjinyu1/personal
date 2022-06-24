@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>给我留言</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- 头部部分 （设置版心 居中对齐）html5新元素-->
+    <header class="header">
+        <div class="w">
+            <div class="logo">个人网站</div>
+            <div class="menu">
+                <ul>
+                    <li><a href="./index.html">个人简历</a></li>
+                    <li><a href="./page1.html">所得荣誉</a></li>
+                    <li><a href="./page2.html">我的爱好</a></li>
+                    <li><a href="./page3.html">课程感悟</a></li>
+                    <li class="active"><a href="./page4.html">给我留言</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- 广告图部分 html5新元素-->
+    <aside class="banner">
+      <img src="./images/banner.png" alt="">
+    </aside>
+    <!-- 主要内容部分 html新元素-->
+    <article id="content" class="w content">
+        <div class="title">留言板</div>
+        <div id="box1">
+            <div class="z" id="lr">
+                <form id="form1" method="post" action="">
+                    <span class="span1"> 您的用户名：</span>
+                    <label>
+                        <input type="text" name="textfield" />
+                    </label>
+                    <p><span class="span1">您的密码：</span>
+                        <input type="password" name="textfield2" />
+                    </p>
+                    <p>
+                       <span class="span1"> 再输一次密码：</span>
+                        <input type="password" name="textfield22" />
+                    </p>
+                    <p> <span class="span1">您的爱好：</span> <span class="ziti">
+                            <input type="checkbox" name="checkbox" value="checkbox" />
+                            读书
+                            <input type="checkbox" name="checkbox2" value="checkbox" />
+                            健身
+                            <input type="checkbox" name="checkbox3" value="checkbox" />
+                            游戏
+                            <input type="checkbox" name="checkbox4" value="checkbox" />
+                            旅游</span><span class="ziti">
+                            <input type="checkbox" name="checkbox22" value="checkbox" />
+                            设计</span><span class="ziti">
+                            <input type="checkbox" name="checkbox222" value="checkbox" />
+                            音乐 </span></p>
+                    <p>
+                        <span class="span1">您的主题：</span>
+                        <input type="text" name="textfield3" />
+                    </p>
+                    <p> <span class="span1">您的内容：</span></p>
+                    <p>
+                        <textarea name="textarea" cols="40" rows="10" wrap="virtual"></textarea>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="submit" name="Submit" value="提交" />
+                        </label>
+                        <input type="reset" name="Submit2" value="重置" />
+                    </p>
+                    <label></label>
+                </form>
+                <p>&nbsp;</p>
+            </div>
+
+        </div>
+    </article>
+    <div class="welcome">欢迎访问我的网站</div>
+    <!-- 底部版权信息部分 -->
+    <div class="footer">版权仅由个人所属@桑金钰 2022-6</div>
+</body>
+
+</html>

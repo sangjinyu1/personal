@@ -1,0 +1,242 @@
+/* 页面初始化 */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none
+}
+/* 设置版心 --- 凝胶布局 */
+.w {
+    width: 1100px;
+    margin: 0 auto
+}
+/* 头部公告部分 */
+.header {
+    line-height: 50px;
+    box-sizing: border-box;
+    padding: 0 20px;
+    color: #fff;
+    background-color: #ff4500
+}
+/* 设置flex 布局 两端对齐 */
+.header .w {
+    display: flex;
+    justify-content: space-between
+}
+
+.header a {
+    color: #fff
+}
+
+.header .logo {
+    font-size: 22px;
+    font-weight: bolder
+}
+
+.header .menu ul {
+    display: flex
+}
+/* 设置菜单选中状态 */
+.header .menu ul .active {
+    background-color: #db7093
+}
+/* 设置菜单鼠标放上状态 */
+.header .menu ul li:hover {
+    background-color: #db7093
+}
+
+.header .menu ul li a {
+    display: inline-block;
+    width: 120px;
+    text-align: center
+}
+/* 大图部分 */
+.banner {
+    height: 400px
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+/* 中间内容部分 */
+.content {
+    margin-top: 20px
+}
+/* 设置公共标题样式 */
+.content .title {
+    line-height: 35px;
+    padding-left: 20px;
+    border-left: 5px solid red;
+    margin-bottom: 20px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between
+}
+
+.content .title .more {
+    font-size: 14px
+}
+
+.content .title .more a {
+    color: #000
+}
+
+.content table {
+    margin-bottom: 20px
+}
+
+.content .td1 {
+    padding: 20px
+}
+
+.content td {
+    padding: 0 20px
+}
+
+.content td p {
+    line-height: 30px
+}
+
+.content td img {
+    height: 100%
+}
+
+.content .imgs {
+    display: flex;
+    justify-content: space-between
+}
+
+.content .imgs .img {
+    width: 22%;
+    height: 230px;
+    overflow: hidden
+}
+/* 设置动画 0.3秒的效果 */
+.content .imgs .img img {
+    width: 100%;
+    height: 230px;
+    transition: all .3s;
+    cursor: pointer
+}
+/* 设置鼠标放上 图片放大 */
+.content .imgs .img img:hover {
+    transform: scale(1.1)
+}
+/* 底部部分 */
+.footer {
+    text-align: center;
+    line-height: 40px;
+    background-color: #ff4500;
+    color: #fff;
+    margin-top: 20px
+}
+/* 第二个页面部分 */
+.content2 .imgs2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+.content2 .imgs2:after {
+    content: "";
+    width: 22%
+}
+
+.content2 .imgs2 .img {
+    width: 22%;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 30px;
+    box-sizing: border-box
+}
+
+.content2 .imgs2 .img:hover {
+    border: 1px solid #ff4500
+}
+
+.content2 .imgs2 .img img {
+    width: 100%;
+    height: 181px;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.content2 .imgs2 .img p {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+/* 第三、第四个页面部分 */
+.content3 {
+    padding: 20px;
+    line-height: 30px;
+    text-indent: 20px
+}
+
+.content3 h3 {
+    margin-bottom: 20px
+}
+
+.content3 .text2 p {
+    margin-bottom: 30px
+}
+
+/* 设置阴影效果 */
+.content3 .text1 {
+    padding: 20px;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .204) !important;
+    margin-bottom: 20px
+}
+/* 设置阴影效果 */
+.content3 .items {
+    padding: 20px;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .204) !important
+}
+/* 设置flex布局 */
+.content3 .items .item {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #ccc
+}
+
+.content3 .items .item .img {
+    width: 30%;
+    text-align: center
+}
+
+.content3 .items .item .img img {
+    width: 100%
+}
+
+.content3 .items .item .img video {
+    width: 100%
+}
+
+.content3 .items .item .text {
+    width: 65%
+}
+/* 留言页面部分 */
+#content p {
+    padding: 10px 0
+}
+
+#content .span1 {
+    display: inline-block;
+    width: 120px;
+    text-align: left
+}
+/* 使用固定定位，将元素定位到网页中的右上叫，随着页面滚动 */
+.welcome{
+    position: fixed;
+    right: 20px;
+    top: 50px;
+    background-color: #ccc;
+    padding: 10px;
+}
